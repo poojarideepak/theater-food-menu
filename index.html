@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Feast - Premium Cinema Dining</title>
+    <meta name="description" content="Order gourmet snacks, artisanal beverages, and chef-curated meals delivered to your theatre seat. Premium dining experience for movie lovers.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Theatre Feast - Premium Cinema Dining">
+    <meta property="og:description" content="Order gourmet food delivered to your theatre seat">
+    <meta property="og:image" content="/og-image.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="D:\\try\\styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                        <polyline points="10,17 15,12 10,7"/>
+                        <line x1="15" x2="3" y1="12" y2="12"/>
+                    </svg>
+                    <h1 class="logo-text">Theatre Feast</h1>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Cart Button -->
+                <button id="cart-btn" class="cart-btn" data-testid="button-cart">
+                    <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                        <line x1="3" x2="21" y1="6" y2="6"/>
+                        <path d="M16 10a4 4 0 0 1-8 0"/>
+                    </svg>
+                    <span class="cart-text">Cart (<span id="cart-count">0</span>)</span>
+                    <span id="cart-badge" class="cart-badge hidden">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-pattern"></div>
+        
+        <div class="hero-content">
+            <div class="hero-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                    <line x1="3" x2="21" y1="6" y2="6"/>
+                    <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+            </div>
+            <h1 class="hero-title">
+                Exquisite Cinema <span class="hero-highlight">Dining</span>
+            </h1>
+            <p class="hero-description">
+                Elevate your theatre experience with our premium selection of gourmet snacks, artisanal beverages, and chef-curated meals.
+            </p>
+            <button id="explore-menu-btn" class="hero-btn" data-testid="button-explore-menu">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                    <line x1="3" x2="21" y1="6" y2="6"/>
+                    <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+                Explore Our Menu
+            </button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="menu-header">
+                <h2 class="menu-title">Our Premium Menu</h2>
+                <p class="menu-description">Carefully crafted selections to enhance your theatrical experience</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all" data-testid="button-filter-all">
+                    All Items
+                </button>
+                <button class="filter-btn" data-category="snacks" data-testid="button-filter-snacks">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="m12 1 3 6 6 3-6 3-3 6-3-6-6-3 6-3z"/>
+                    </svg>
+                    Snacks
+                </button>
+                <button class="filter-btn" data-category="beverages" data-testid="button-filter-beverages">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                        <line x1="6" x2="6" y1="1" y2="4"/>
+                        <line x1="10" x2="10" y1="1" y2="4"/>
+                        <line x1="14" x2="14" y1="1" y2="4"/>
+                    </svg>
+                    Beverages
+                </button>
+                <button class="filter-btn" data-category="meals" data-testid="button-filter-meals">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                        <path d="M7 2v20"/>
+                        <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3z"/>
+                    </svg>
+                    Meals
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search menu items..."
+                        data-testid="input-search"
+                    >
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading" class="loading">
+                <div class="loading-grid">
+                    <div class="loading-card" data-index="0"></div>
+                    <div class="loading-card" data-index="1"></div>
+                    <div class="loading-card" data-index="2"></div>
+                    <div class="loading-card" data-index="3"></div>
+                    <div class="loading-card" data-index="4"></div>
+                    <div class="loading-card" data-index="5"></div>
+                </div>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div id="menu-grid" class="menu-grid hidden"></div>
+
+            <!-- No Results -->
+            <div id="no-results" class="no-results hidden">
+                <svg class="no-results-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+                <p class="no-results-text">No items found matching your search.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar" data-testid="sidebar-cart">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3 class="cart-title">Your Order</h3>
+                <button id="close-cart" class="close-btn" data-testid="button-close-cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="18" x2="6" y1="6" y2="18"/>
+                        <line x1="6" x2="18" y1="6" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart">
+                    <svg class="empty-cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="8" cy="21" r="1"/>
+                        <circle cx="19" cy="21" r="1"/>
+                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57L23 6H6"/>
+                    </svg>
+                    <p class="empty-cart-text">Your cart is empty</p>
+                    <p class="empty-cart-subtext">Add some delicious items to get started!</p>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total" class="total-price" data-testid="text-cart-total">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="checkout-btn disabled" disabled data-testid="button-checkout">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay hidden" data-testid="overlay-cart"></div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Checkout</h3>
+                <button id="close-checkout" class="close-btn" data-testid="button-close-checkout">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="18" x2="6" y1="6" y2="18"/>
+                        <line x1="6" x2="18" y1="6" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-group">
+                    <label for="customer-name" class="form-label">Full Name</label>
+                    <input type="text" id="customer-name" class="form-input" required data-testid="input-customer-name">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-email" class="form-label">Email</label>
+                    <input type="email" id="customer-email" class="form-input" required data-testid="input-customer-email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="seat-number" class="form-label">Seat Number</label>
+                    <input type="text" id="seat-number" class="form-input" placeholder="e.g., A-15" required data-testid="input-seat-number">
+                    <div class="error-message" id="seat-error"></div>
+                </div>
+
+                <div class="payment-section">
+                    <h4 class="payment-title">Payment Information</h4>
+                    
+                    <div class="form-group">
+                        <label for="card-number" class="form-label">Card Number</label>
+                        <input type="text" id="card-number" class="form-input" placeholder="1234 5678 9012 3456" required data-testid="input-card-number">
+                        <div class="error-message" id="card-error"></div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry" class="form-label">Expiry</label>
+                            <input type="text" id="expiry" class="form-input" placeholder="MM/YY" required data-testid="input-expiry">
+                            <div class="error-message" id="expiry-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" id="cvv" class="form-input" placeholder="123" required data-testid="input-cvv">
+                            <div class="error-message" id="cvv-error"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-total">
+                    <div class="total-row">
+                        <span>Total:</span>
+                        <span id="checkout-total" class="total-price" data-testid="text-checkout-total">$0.00</span>
+                    </div>
+                    <button type="submit" id="complete-payment" class="payment-btn" data-testid="button-complete-payment">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect width="20" height="14" x="2" y="5" rx="2"/>
+                            <line x1="2" x2="22" y1="10" y2="10"/>
+                        </svg>
+                        Complete Payment
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div id="confirmation-modal" class="modal hidden">
+        <div class="modal-content confirmation-content">
+            <div class="confirmation-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22,4 12,14.01 9,11.01"/>
+                </svg>
+            </div>
+            <h3 class="confirmation-title">Order Confirmed!</h3>
+            <p class="confirmation-text">
+                Your delicious order will be delivered to your seat before the show begins.
+            </p>
+            <div class="order-number">
+                <p class="order-label">Order Number</p>
+                <p id="order-number" class="order-id" data-testid="text-order-number">#</p>
+            </div>
+            <button id="continue-shopping" class="continue-btn" data-testid="button-continue-shopping">
+                Continue Shopping
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- JavaScript -->
+    <script src="D:\\try\\script.js"></script>
+</body>
+</html>
