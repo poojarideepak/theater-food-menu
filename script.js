@@ -18,7 +18,7 @@ const MENU_DATA = [
     category: "snacks",
     price:270,
     description: "Artisanal popcorn with black truffle oil and parmesan",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1579642761360-eabd1cca1e81?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
   },
   {
     id: "2",
@@ -26,7 +26,7 @@ const MENU_DATA = [
     category: "snacks",
     price:150,
     description: "House-made tortilla chips with premium cheese blend",
-    image: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169"
   },
   {
     id: "3",
@@ -34,7 +34,7 @@ const MENU_DATA = [
     category: "snacks",
     price:60,
     description: "Selection of handcrafted chocolates from local chocolatiers",
-    image: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1622715395486-08183374570a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
   },
   // Beverages
   {
@@ -43,7 +43,7 @@ const MENU_DATA = [
     category: "beverages",
     price: 69,
     description: "Our exclusive coffee blend with notes of caramel and vanilla",
-    image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1545285179-78da7c2b8f83?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
   },
   {
     id: "5",
@@ -51,7 +51,7 @@ const MENU_DATA = [
     category: "beverages",
     price: 89,
     description: "Rotating selection of local craft beers",
-    image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1612528443702-f6741f70a049?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1180"
   },
   {
     id: "6",
@@ -59,7 +59,7 @@ const MENU_DATA = [
     category: "beverages",
     price: 149,
     description: "Curated wine selection from award-winning vineyards",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1695048475495-6535686c473c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
   },
   // Meals
   {
@@ -68,7 +68,7 @@ const MENU_DATA = [
     category: "meals",
     price: 299,
     description: "Premium wagyu beef with truffle aioli and aged cheddar",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1559316009-84c6a680c716?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=735"
   },
   {
     id: "8",
@@ -76,7 +76,7 @@ const MENU_DATA = [
     category: "meals",
     price: 329,
     description: "Fresh Maine lobster with three-cheese blend and herb crust",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1626911690101-ae8f428b4468?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
   },
   {
     id: "9",
@@ -84,7 +84,7 @@ const MENU_DATA = [
     category: "meals",
     price: 229,
     description: "Artisanal selection of hummus, olives, cheese, and flatbread",
-    image: "https://images.unsplash.com/photo-1544681280-d2c1bb12ad3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    image: "https://images.unsplash.com/photo-1748540459503-19efc015143b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=684"
   }
 ];
 
